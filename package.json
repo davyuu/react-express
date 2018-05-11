@@ -1,0 +1,20 @@
+{
+  "name": "react-express",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "apicache": "^1.2.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "memory-cache": "^0.2.0",
+    "request": "^2.85.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start"
+  }
+}
